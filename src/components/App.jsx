@@ -12,12 +12,14 @@ const App = () => {
         </Suspense>
       );
     }
+
+    return <h3>well = false.</h3>;
   };
 
   return (
     <div className="app">
       <h1>Basic React App Component</h1>
-      <button onClick={() => setWell(true)}>Show</button>
+      <button onClick={() => setWell(!well)}>Show</button>
       {showShow()}
     </div>
   );
